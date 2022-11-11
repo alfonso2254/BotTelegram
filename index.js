@@ -38,3 +38,9 @@ bot.onText(/^\/clima (.+)/, function(msg, match){
         }
     })
 });
+
+bot.onText(/^\/start/, function(msg, match){
+    var chatId = msg.chat.id;
+    bot.sendMessage(chatId, "Hola, bienvenido a mi bot de clima. Para usarlo, escribe /clima y el nombre de la ciudad que quieras consultar. Por ejemplo: /clima Madrid",{parse_mode: 'Markdown'});
+}
+);
