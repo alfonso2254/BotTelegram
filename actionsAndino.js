@@ -33,11 +33,11 @@ sendInfoAndino = (indSms, bot) => {
       // enviar sms
       bot.sendMessage(indSms, sms, { parse_mode: "HTML" });
 
-      setTimeout(() => {
-        bot.sendMessage(indSms, "Opciones para andino app", {
-            reply_markup: ButtonsReply_markup,
-          });
-        }, 1000);
+    //   setTimeout(() => {
+    //     bot.sendMessage(indSms, "Opciones para andino app", {
+    //         reply_markup: ButtonsReply_markup,
+    //       });
+    //     }, 1000);
     })
     .catch(function (error) {
       // handle error
@@ -71,11 +71,11 @@ sendTransactionAndino = (indSms, bot) => {
       // enviar sms
       bot.sendMessage(indSms, sms, { parse_mode: "HTML" });
 
-      setTimeout(() => {
-        bot.sendMessage(indSms, "Opciones para andino app", {
-            reply_markup: ButtonsReply_markup,
-          });
-        }, 1000);
+    //   setTimeout(() => {
+    //     bot.sendMessage(indSms, "Opciones para andino app", {
+    //         reply_markup: ButtonsReply_markup,
+    //       });
+    //     }, 1000);
     })
     .catch(function (error) {
       // handle error
