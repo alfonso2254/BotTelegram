@@ -120,12 +120,21 @@ bot.onText(/^\/clima (.+)/, function(msg, match){
 });
 
 
+
+
+
 // create server node api
+const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
 const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader("Content-Type", "text/plain");
-    res.end("Hello World");
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hola Mundo');
 });
 
-server.listen(process.env.PORT || 5000);
-
+server.listen(port, hostname, () => {
+  console.log(`El servidor se está ejecutando en http://${hostname}:${port}/`);
+});
